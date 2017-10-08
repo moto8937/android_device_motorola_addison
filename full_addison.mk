@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,4 +21,6 @@ $(call inherit-product, device/motorola/addison/device.mk)
 PRODUCT_DEVICE := addison
 PRODUCT_NAME := full_addison
 
+$(call inherit-product-if-exists, vendor/motorola/qcom318-32/qcom318-32-vendor.mk)
+$(call inherit-product-if-exists, vendor/motorola/msm8953-common/msm8953-common-vendor.mk)
 $(call inherit-product-if-exists, vendor/motorola/addison/addison-vendor.mk)

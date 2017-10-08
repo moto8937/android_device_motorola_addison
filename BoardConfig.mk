@@ -14,6 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+-include vendor/motorola/qcom318-32/BoardConfigVendor.mk
+-include vendor/motorola/msm8953-common/BoardConfigVendor.mk
 -include vendor/motorola/addison/BoardConfigVendor.mk
 
 DEVICE_PATH := device/motorola/addison
@@ -54,7 +56,7 @@ BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_CONFIG := addison_defconfig
-TARGET_KERNEL_SOURCE := kernel/motorola/msm8953
+TARGET_KERNEL_SOURCE := kernel/motorola/msm8937
 
 # Audio
 AUDIO_FEATURE_ENABLED_COMPRESS_VOIP := true
